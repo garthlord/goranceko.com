@@ -1,0 +1,32 @@
+body { font-family: Georgia; color: #444; }
+
+.container { padding-top: 2em; }
+.header { margin-bottom: 1em; padding-bottom: .5em; border-bottom: 1px solid #aaa; }
+
+.header_title h1 { font-size: 2em; letter-spacing: 0.15em; margin-top: 0; }
+.header_title h2 { font-size: 1.3em; letter-spacing: 0.1em; font-style: italic; margin-top: 0; color: #999; }
+.header_title h1, .title h2 { text-transform: uppercase; }
+
+.header_contact .header_contact_item { margin-right: 1em; line-height: 1.6em; }
+
+.cv_section:last-child .cv_item:last-child { border-bottom: none; }
+
+.cv_section_title h2 { font-size: 1.4em; }
+/* .cv_section_title h2::after { content: ":"; } /**/
+
+@media only screen and (max-device-width: 25cm) {
+    .cv_section_title h2 { text-align: center; font-weight: bold; }
+}
+
+.cv_item { margin-bottom: 1em; padding-bottom: .5em; border-bottom: 1px solid #aaa; }
+.cv_item h2 { font-size: 1.2em; font-weight: bold; }
+.cv_item h3 { font-size: 1.1em; font-weight: bold; margin-top: 0; }
+.cv_item p, .cv_item li { font-size: 1.1em; }
+.cv_item *:last-child { margin-bottom: 0; }
+.cv_item ul { padding-left: 1.2em; }
+
+.cv_item_timespan { color: #777; }
+
+.other_item { display: block; margin-top: .1em; }
+
+@import "~bootstrap/scss/bootstrap";
