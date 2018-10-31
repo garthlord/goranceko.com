@@ -1,4 +1,8 @@
-body { font-family: Georgia; color: #444; }
+$blue: #428bca;
+
+@import "~bootstrap/scss/bootstrap";
+
+body { font-family: Georgia; font-size: 14px; color: #444; }
 
 .container { padding-top: 2em; }
 .header { margin-bottom: 1em; padding-bottom: .5em; border-bottom: 1px solid #aaa; }
@@ -14,7 +18,7 @@ body { font-family: Georgia; color: #444; }
 .cv_section_title h2 { font-size: 1.4em; }
 /* .cv_section_title h2::after { content: ":"; } /**/
 
-@media only screen and (max-device-width: 25cm) {
+@media only screen and (max-device-width: 767.98px) {
     .cv_section_title h2 { text-align: center; font-weight: bold; }
 }
 
@@ -28,5 +32,3 @@ body { font-family: Georgia; color: #444; }
 .cv_item_timespan { color: #777; }
 
 .other_item { display: block; margin-top: .1em; }
-
-@import "~bootstrap/scss/bootstrap";
