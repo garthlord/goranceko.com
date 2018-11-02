@@ -16,6 +16,8 @@ class ResumeController extends AbstractController
             'name' => 'Goran Čeko',
             'title' => 'Web Developer',
             'email' => 'goranceko11@gmail.com',
+            'description' => 'I am working as a Head of Development and I enjoy tackling different programming problems and thinking on different approaches to solving them.',
+            'keywords' => 'Goran Čeko,Developer,Web,PHP,MVC,Symfony,Laravel,Node.js,Professional,Reliable',
             'accomplishments' => [
                 'Commercial experience: 5 years of software development.',
                 'Total experience: 9 years of software development.',

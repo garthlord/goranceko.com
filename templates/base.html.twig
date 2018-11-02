@@ -3,8 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        {# ToDo - MetaData #}
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="author" content="Goran Čeko">
+        {% block meta_description %}
+            <meta name="description" content="Welcome to goranceko.com. This website is intended for learning and self promotion.">
+        {% endblock %}
+        {% block meta_keywords %}
+            <meta name="keywords" content="Goran Čeko">
+        {% endblock %}
+        {% block title %}
+            <title>Goran Čeko Website</title>
+        {% endblock %}
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('build/app.css') }}">
         {% endblock %}

@@ -1,7 +1,15 @@
 {% extends "base.html.twig" %}
 
+{% block meta_description %}
+    <meta name="description" content="{{ resume.description }}">
+{% endblock %}
+
+{% block meta_keywords %}
+    <meta name="keywords" content="{{ resume.keywords }}">
+{% endblock %}
+
 {% block title %}
-    {{ resume.name }} | {{ resume.title }} | {{ resume.email }}
+    <title>{{ resume.name }} | {{ resume.title }} | {{ resume.email }}</title>
 {% endblock %}
 
 {% block stylesheets %}
@@ -133,5 +141,4 @@
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('build/app.js') }}"></script>
 {% endblock %}
