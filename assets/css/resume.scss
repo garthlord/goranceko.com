@@ -7,16 +7,12 @@ body { font-family: Georgia; font-size: 14px; color: #444; }
 .container { padding-top: 2em; }
 .header { margin-bottom: 1em; padding-bottom: .5em; border-bottom: 1px solid #aaa; }
 
-.header_title h1 { font-size: 2em; letter-spacing: 0.15em; margin-top: 0; }
+.header_title h1 { font-size: 2em; letter-spacing: 0.15em; margin-top: 0; text-transform: uppercase; }
 .header_title h2 { font-size: 1.3em; letter-spacing: 0.1em; font-style: italic; margin-top: 0; color: #999; }
-.header_title h1, .title h2 { text-transform: uppercase; }
-
-.header_contact .header_contact_item { margin-right: 1em; line-height: 1.6em; }
 
 .cv_section:last-child .cv_item:last-child { border-bottom: none; }
 
 .cv_section_title h2 { font-size: 1.4em; }
-/* .cv_section_title h2::after { content: ":"; } /**/
 
 @media only screen and (max-device-width: 767.98px) {
     .cv_section_title h2 { text-align: center; font-weight: bold; }
