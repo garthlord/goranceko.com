@@ -42,6 +42,8 @@ class Resume
                                     ],[
                                         'type' => 'list',
                                         'list' => [
+                                            'Leading team of developers',
+                                            'Mentoring junior developers',
                                             'Developing new functionalities',
                                             'Maintaining web applications and systems',
                                             'Providing support for colleagues',
@@ -54,7 +56,7 @@ class Resume
                                     ],[
                                         'type' => 'project',
                                         'title' => 'Technical Editing Panel',
-                                        'description' => 'It serve as a communication platform between Publishing Process Managers and Technical Editors. Also, when Technical Editor uploads formatted XML, file automatically goes through series of transformations and creates PDF file.',
+                                        'description' => 'It serve as a communication platform between Author Service Managers and Technical Editors. Also, when Technical Editor uploads formatted XML, file automatically goes through series of transformations and creates PDF file.',
                                     ],
                                 ],
                             ],
@@ -89,22 +91,24 @@ class Resume
                                             [
                                                 'title' => 'Languages',
                                                 'description' => [
-                                                    'PHP, Javascript, SQL, HTML, CSS, Regular expressions',
+                                                    'PHP, Javascript, Node.js, Vue.js, GraphQL, SQL, HTML, Twig, CSS, SCSS, Regular expressions',
                                                 ],
                                             ],[
-                                                'title' => 'Frameworks/libraries',
+                                                'title' => 'Frameworks/Libraries',
                                                 'description' => [
-                                                    'MVC, Zend Framework, Laravel, jQuery',
+                                                    'MVC, Symfony, Zend Framework, Laravel, Express, jQuery',
                                                 ],
                                             ],[
                                                 'title' => 'Source control',
                                                 'description' => [
-                                                    'Git, Github, Subversion, Composer, Bitbucket',
+                                                    'Git, Github, Subversion, Bitbucket',
+                                                    'Composer, yarn, npm',
                                                 ],
                                             ],[
                                                 'title' => 'Services/API',
                                                 'description' => [
-                                                    'Paypal API, Moneybookers API, Google analytics API, Google Chart API, Geo API',
+                                                    'Amazon AWS, Amazon S3, Amazon CDN, OAuth',
+                                                    'Paypal API, Google analytics API, Google analytics API, Google Chart API, Geo API',
                                                 ],
                                             ],[
                                                 'title' => 'Protocols',
@@ -215,7 +219,7 @@ class Resume
                                                 'target' => '_blank',
                                             ],[
                                                 'key' => 'Location',
-                                                'value' => 'Rijeka, Croatia (EU)',
+                                                'value' => 'Selce, Croatia (EU)',
                                             ],[
                                                 'key' => 'Year of birth',
                                                 'value' => '1989',
