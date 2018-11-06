@@ -38,7 +38,7 @@ composer install
 * Build node.js app
 ```
 yarn install
-yarn production
+yarn build
 ```
 
 * Create DataBase, Migrate and fill DataFixtures
