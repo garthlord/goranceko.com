@@ -3,8 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;;
 use Symfony\Component\HttpFoundation\Response;
 
 class SeoController extends AbstractController
@@ -16,7 +15,7 @@ class SeoController extends AbstractController
     /**
      * @Route("/sitemap.xml", name="sitemap")
      */
-    public function index(Request $request)
+    public function sitemap()
     {
         $this->_host = getenv('WEBSITE_URL');
         $date = date('Y-m-d');
@@ -39,6 +38,20 @@ class SeoController extends AbstractController
             $this->renderView('seo/sitemap.xml.twig', ['urlset' => $urlset])
         );
         $response->headers->set('Content-Type', 'text/xml');
+ 
+        return $response;
+    }
+
+    /**
+     * @Route("/robots.txt", name="robots")
+     */
+    public function robots()
+    {
+        $this->_host = getenv('WEBSITE_URL');
+        $response = new Response(
+            $this->renderView('seo/robots.txt.twig', ['sitemap' => $this->_host . $this->generateUrl('sitemap')])
+        );
+        $response->headers->set('Content-Type', 'text/plain');
  
         return $response;
     }
