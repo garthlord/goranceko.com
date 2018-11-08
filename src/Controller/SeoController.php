@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SeoController extends AbstractController
 {
-    const HOST = 'https://www.goranceko.com';
+    private $_host;
     const CHANGEFREQ = 'always';
     const PRIORITY = '0.5';
 
@@ -18,16 +18,17 @@ class SeoController extends AbstractController
      */
     public function index(Request $request)
     {
+        $this->_host = getenv('WEBSITE_URL');
         $date = date('Y-m-d');
         $urlset = [
             [
-                'loc' => self::HOST,
+                'loc' => $this->_host,
                 'lastmod' => $date,
                 'changefreq' => self::CHANGEFREQ,
                 'priority' => self::PRIORITY,
             ],
             [
-                'loc' => self::HOST . '/jasna',
+                'loc' => $this->_host . '/jasna',
                 'lastmod' => $date,
                 'changefreq' => self::CHANGEFREQ,
                 'priority' => self::PRIORITY,
