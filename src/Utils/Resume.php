@@ -4,7 +4,7 @@ namespace App\Utils;
 
 class Resume
 {
-    public function getResume($person): array
+    public function getResume($person, $host): array
     {
         $resumes = [
             'goran' => [
@@ -226,6 +226,11 @@ class Resume
                                             ],[
                                                 'key' => 'Nationality',
                                                 'value' => 'Croatian (EU)',
+                                            ],[
+                                                'key' => 'Download',
+                                                'value' => 'PDF',
+                                                'href' => "{$host}/resume_download/goran",
+                                                'target' => '_self',
                                             ],
                                         ],
                                     ],
@@ -504,6 +509,11 @@ class Resume
                                                 'value' => 'jasna-borbelj-ceko',
                                                 'href' => 'https://www.linkedin.com/in/jasna-borbelj-ceko/',
                                                 'target' => '_blank',
+                                            ],[
+                                                'key' => 'Preuzimanje',
+                                                'value' => 'PDF',
+                                                'href' => "{$host}/resume_download/jasna",
+                                                'target' => '_self',
                                             ],
                                         ],
                                     ],

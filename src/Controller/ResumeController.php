@@ -18,8 +18,10 @@ class ResumeController extends AbstractController
      */
     public function goranceko(Resume $resume)
     {
+        $this->_host = getenv('WEBSITE_URL');
+
         return $this->render('resume/index.html.twig', [
-            'resume' => $resume->getResume('goran'),
+            'resume' => $resume->getResume('goran', $this->_host),
         ]);
     }
 
@@ -28,8 +30,10 @@ class ResumeController extends AbstractController
      */
     public function jasnaborbeljceko(Resume $resume)
     {
+        $this->_host = getenv('WEBSITE_URL');
+
         return $this->render('resume/index.html.twig', [
-            'resume' => $resume->getResume('jasna'),
+            'resume' => $resume->getResume('jasna', $this->_host),
         ]);
     }
 
