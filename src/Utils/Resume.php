@@ -262,6 +262,7 @@ class Resume
                                             'Individualni i grupni psihološki tretmani',
                                             'Edukativne aktivnosti',
                                             'Vođenje administracije SSC-a',
+                                            'Završena edukacija Osnovni trening za primjenu Terapije prihvačanjem i posvećenošću (ACT) organizirana od strane KBT Opcija (Lipanj 2019.)'
                                         ],
                                     ],
                                 ],
@@ -354,7 +355,8 @@ class Resume
                                             'Provođenje KLIK ljetnih radionica',
                                             'Organizacija i sudjelovanje u godišnjoj manifestaciji Dan darovitih',
                                             'Sudjelovanje u pisanju projektnih prijedloga',
-                                            'Član upravnog odbora udruge',
+                                            'Član upravnog odbora udruge od 2015. do 2019.',
+                                            'Završena edukacija Ospospobljanja za primjenu i bodovanje testa potencijalne kreativnosti EPoC (Siječanj 2019.)'
                                         ],
                                     ],
                                 ],
@@ -480,6 +482,34 @@ class Resume
                             ],
                         ],
                     ],[
+                        'name' => 'Ostale informacije',
+                        'items' => [[
+                                'parts' => [[
+                                        'type' => 'title',
+                                        'title' => 'Potentially Gifted Preschool Children Care: Kindergarten Rijeka Model',
+                                    ],[
+                                        'type' => 'text',
+                                        'text' => '14. ECHA kongres "Rethinking giftedness: gifted in digital age", Poster prezentacija, Brašnić, Lj. i Borbelj, J.',
+                                    ],[
+                                        'type' => 'text',
+                                        'text' => 'Ljubljana, Rujan 2014',
+                                    ],
+                                ],
+                            ],[
+                                'parts' => [[
+                                        'type' => 'title',
+                                        'title' => 'Center for Gifted Children - Non-Profit Organization as a Part of a Social Care for the Gifted',
+                                    ],[
+                                        'type' => 'text',
+                                        'text' => '13th International Conference on Excellence & Innovation in Basic-Higher Education & Psychology, Poster prezentacija, Arrigoni, J., Blanuša Trošelj, D., Borbelj Čeko, J., Brašnić, Lj.',
+                                    ],[
+                                        'type' => 'text',
+                                        'text' => 'Rijeka, Svibanj 2016.',
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],[
                         'name' => 'O meni',
                         'items' => [[
                                 'parts' => [[
@@ -500,7 +530,7 @@ class Resume
                                                 'value' => 'Selce, Croatia (EU)',
                                             ],[
                                                 'key' => 'Godina rođenja',
-                                                'value' => '1987',
+                                                'value' => '1987.',
                                             ],[
                                                 'key' => 'Vozačka dozvola',
                                                 'value' => 'B kategorija',
