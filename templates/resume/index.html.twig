@@ -62,7 +62,7 @@
                         {% elseif part.type == 'about' %}
                             {% for item in part.list %}
                             <span class="other_item">
-                                {{ item.key }}: 
+                                {{ item.key }}:
                                 {% if item.href is defined %}
                                     <a href="{{ item.href }}" target="{{ item.target }}">{{ item.value }}</a>
                                 {% else %}

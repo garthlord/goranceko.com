@@ -19,8 +19,8 @@ class Resume
                                 'parts' => [[
                                         'type' => 'list',
                                         'list' => [
-                                            'Commercial experience: 5 years of software development.',
-                                            'Total experience: 9 years of software development.',
+                                            'Commercial experience: 7 years of software development.',
+                                            'Total experience: 11 years of software development.',
                                             'Designed, developed, tested and maintained Web/PHP/Javascript based applications.',
                                             'Worked directly with clients on requirements and technical specifications.',
                                             'Provided training for team members and colleagues.',
@@ -38,7 +38,7 @@ class Resume
                                         'end' => 'Present',
                                     ],[
                                         'type' => 'title',
-                                        'title' => 'PHP Developer - IN TECH d.o.o.',
+                                        'title' => 'Web Developer - IN TECH d.o.o.',
                                     ],[
                                         'type' => 'list',
                                         'list' => [
@@ -51,12 +51,53 @@ class Resume
                                         ],
                                     ],[
                                         'type' => 'project',
-                                        'title' => 'Orders Panel',
-                                        'description' => 'This panel is used for managing book orders, from order itself untill books are shipped to a client. After order is made, book goes through process of technical editing (if necessary), creating invoice, payment, printing and shipping. Order panel communicates with other parts of IntechOpen\'s system (like invoicing system) so it can generate necessary data, show all needed data in one place and check if books satisfies criteria for proceeding to next step.',
+                                        'title' => 'Website Backend',
+                                        'description' => 'Backend of the website is built in PHP 7.1 under Symfony Framework. Its main purpose is to be the communication layer between DataBase (MySQL) and Website Frontend. Also it provides an API for our MTS system to be able to change data online (ie. when a new chapter is published) and offers CMS so that static pages are more easily created/updated and featured books/authors are chosen.',
                                     ],[
                                         'type' => 'project',
-                                        'title' => 'Technical Editing Panel',
-                                        'description' => 'It serve as a communication platform between Author Service Managers and Technical Editors. Also, when Technical Editor uploads formatted XML, file automatically goes through series of transformations and creates PDF file.',
+                                        'title' => 'Website Frontend',
+                                        'description' => 'Website Frontend is built in Node.js (Express Framework). Frontend gets all necessary data from Backend over API (GraphQL) and uses data to host all published books and chapters. It offers open access to all chapters as well as an option to download all published chapters. It counts downloads and sends data to Backend.',
+                                    ],[
+                                        'type' => 'project',
+                                        'title' => 'MTS',
+                                        'description' => 'Manuscript Tracking System (MTS) is a system intended for authors and editors to use in the process of publishing. It is also used by ASM (Author Service Manager) that follows the whole lifecycle of manuscripts. Partners (technical editors, copyeditors, print and delivery units, etc.) are able to login to the system and to see what is important for their service. This system is built in php 5.3 with Zend Framework.',
+                                    ],[
+                                        'type' => 'project',
+                                        'title' => 'Call System',
+                                        'description' => 'Call system is a system used only for sending mass emails to contacts to check if they are interested in publishing in new projects that are starting. System can use an internal SMTP server, external SMTP relay or even SendGrid API to send emails. Built in php with Zend 2 Framework. Various API communication with our MTS is part of the system.',
+                                    ],[
+                                        'type' => 'project',
+                                        'title' => 'SSO',
+                                        'description' => 'Single Sign On (SSO) is a Firebase app used only to manage the whole register/login loop. Once logged in to one of our systems, the user can access all of them (Website, MTS, CRM). Is built with Node.js (Vue.js).',
+                                    ],[
+                                        'type' => 'project',
+                                        'title' => 'CRM',
+                                        'description' => 'This system is built as a replacement for MTS with more features primarily focused on business intelligence (leads, opportunities, analytics, etc.) CRM is built in Salesforce and is integrated with our MTS system so that both systems are in sync before we transfer all production to Salesforce CRM.',
+                                    ],
+                                ],
+                            ],[
+                                'parts' => [[
+                                        'type' => 'timeline',
+                                        'start' => 'Oct 2019',
+                                        'end' => 'Present',
+                                    ],[
+                                        'type' => 'title',
+                                        'title' => 'Web Developer - Rijeka Psihologije',
+                                    ],[
+                                        'type' => 'list',
+                                        'list' => [
+                                            'Developing web dashboard for application to event Rijeka Psihologije',
+                                            'Maintaining web applications and systems',
+                                            'System administrating and hosting',
+                                        ],
+                                    ],[
+                                        'type' => 'project',
+                                        'title' => 'About',
+                                        'description' => 'System is built with php 7.2 with Symfony Framework. It serves as a place for lecturers to apply to participate in the event Rijeka Psihologije. Other than online form to apply it has a login area for Rijeka Psihologije employees to view and manage all applications, it offers various exports for easier organization of events and some postevent activities.'
+                                    ],[
+                                        'type' => 'project',
+                                        'title' => 'Future',
+                                        'description' => 'Plan is to build whole website with focus on searching and filtering event activities.'
                                     ],
                                 ],
                             ],
@@ -131,6 +172,21 @@ class Resume
                     ],[
                         'name' => 'Education',
                         'items' => [[
+                                'parts' => [[
+                                        'type' => 'timeline',
+                                        'start' => '2019',
+                                        'end' => '2019',
+                                    ],[
+                                        'type' => 'title',
+                                        'title' => 'SymfonyLive London 2019',
+                                        'href' => 'https://london2019.live.symfony.com/',
+                                        'target' => '_blank',
+                                    ],[
+                                        'type' => 'text',
+                                        'text' => 'SymfonyLive, London',
+                                    ],
+                                ],
+                            ],[
                                 'parts' => [[
                                         'type' => 'timeline',
                                         'start' => '2014',
@@ -226,11 +282,6 @@ class Resume
                                             ],[
                                                 'key' => 'Nationality',
                                                 'value' => 'Croatian (EU)',
-                                            ],[
-                                                'key' => 'Download',
-                                                'value' => 'PDF',
-                                                'href' => "{$host}/resume_download/goran",
-                                                'target' => '_self',
                                             ],
                                         ],
                                     ],
