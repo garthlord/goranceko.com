@@ -1,8 +1,11 @@
-
 ###> nbproject ###
 /nbproject/private/
 nbproject/
 ###< nbproject ###
+
+###> phpstorm ###
+/.idea/
+###< phpstorm ###
 
 ###> symfony/framework-bundle ###
 /.env
