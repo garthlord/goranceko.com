@@ -449,13 +449,15 @@ class Resume
                                                 'description' => [
                                                     'Vještine organiziranja i vođenja stečene u organizaciji i vođenju programa: "Vrijeme za mene" i "Posebni odgojni postupak" u udruzi "Oaza"; KLIK ljetnih radionica i ostalih radionica i predavanja za darovitu djecu i njihove roditelje pri Udruzi za promicanje darovitosti (2013. i 2014. godine), te "Ferije sa svrhom" u Elan savjetovanju.',
                                                     'Organiziranje tribina o novim socijalnim uslugama te promocija udomiteljstva "Novi život može početi u Novom", Novi Vinodolski (prosinac, 2015.) i "Dijete u srcu obitelji" u Senju (Svibanj 2016.).',
-                                                    'Vještine upravljanja i organizacije rada udruge stečene kroz članstvo u upravnom odboru Centra za poticanje darovitosti, Rijeka.',
+                                                    'Vještine upravljanja i organizacije rada udruge stečene kroz članstvo u upravnom odboru Centra za poticanje darovitosti, Rijeka i organizacijskom odboru Rijeke psihologije (2019. i 2020.)..',
                                                 ],
                                             ],[
                                                 'title' => 'Računalne vještine i kompetencije',
                                                 'description' => [
                                                     'Napredno baratanje Microsoft Office™ alatima (Word™, Excel™ and PowerPoint™)',
                                                     'Baratanje alatima za statističku obradu podataka (SPSS for Windows)',
+                                                    'Baratanje programima za dizajn (Canva)',
+                                                    'Baratenje sustavim za upravljanje sadržajem (Wordpress, Joomla)'
                                                 ],
                                             ],
                                         ],
@@ -467,16 +469,29 @@ class Resume
                         'name' => 'Edukacija',
                         'items' => [[
                                 'parts' => [[
-                                        'type' => 'timeline',
-                                        'start' => 'Travanj 2016',
-                                        'end' => 'Listopad 2018',
-                                    ],[
-                                        'type' => 'title',
-                                        'title' => 'Psihoterapeutkinja kognitivno bihevioralne terapije (stupanj 2)',
-                                    ],[
-                                        'type' => 'text',
-                                        'text' => 'HUBIKOT - Hrvatsko udruženje za bihevioralno kognitivne terapije',
-                                    ],
+                                    'type' => 'timeline',
+                                    'start' => 'Studeni 2019',
+                                    'end' => '',
+                                ],[
+                                    'type' => 'title',
+                                    'title' => 'Psihoterapeutikinja kognitivno bihevioralne terapije u superviziji (stupanj 3)',
+                                ],[
+                                    'type' => 'text',
+                                    'text' => 'HUBIKOT - Hrvatsko udruženje za bihevioralno kognitivne terapije',
+                                ],
+                                ],
+                            ],[
+                                'parts' => [[
+                                    'type' => 'timeline',
+                                    'start' => 'Travanj 2016',
+                                    'end' => 'Listopad 2018',
+                                ],[
+                                    'type' => 'title',
+                                    'title' => 'Psihoterapeutkinja kognitivno bihevioralne terapije (stupanj 2)',
+                                ],[
+                                    'type' => 'text',
+                                    'text' => 'HUBIKOT - Hrvatsko udruženje za bihevioralno kognitivne terapije',
+                                ],
                                 ],
                             ],[
                                 'parts' => [[
